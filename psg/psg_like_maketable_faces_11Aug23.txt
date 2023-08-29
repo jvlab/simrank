@@ -1,0 +1,247 @@
+%make database table for faces
+clear
+date
+ans =
+    '14-Aug-2023'
+pwd
+ans =
+    'C:\Users\jdvicto\Documents\jv\EY7977\psg'
+close all
+psg_like_maketable
+Creating table_like from scratch.
+Enter likelihood analysis file to add to table, e.g., [animals|btc]_[umi_trip|tent]like_db.mat:faces_umi_triplike_db_11Aug23.mat
+ds   1->faces_mpi_en2_fc_choices_MC_sess01_10_sel__
+ds   2->faces_mpi_en2_fc_choices_MC_sess01_10_sel__y_fX_y_m
+ds   3->faces_mpi_en2_fc_choices_MC_sess01_10_sel__m_fX_m_m
+ds   4->faces_mpi_en2_fc_choices_MC_sess01_10_sel__o_fX_o_m
+ds   5->faces_mpi_en2_fc_choices_MC_sess01_10_sel__y_fX_m_fX_o_f
+ds   6->faces_mpi_en2_fc_choices_MC_sess01_10_sel__y_fX_m_f
+ds   7->faces_mpi_en2_fc_choices_MC_sess01_10_sel__y_fX_o_f
+ds   8->faces_mpi_en2_fc_choices_MC_sess01_10_sel__m_fX_o_f
+ds   9->faces_mpi_en2_fc_choices_MC_sess01_10_sel__y_mX_m_mX_o_m
+ds  10->faces_mpi_en2_fc_choices_MC_sess01_10_sel__y_mX_m_m
+ds  11->faces_mpi_en2_fc_choices_MC_sess01_10_sel__y_mX_o_m
+ds  12->faces_mpi_en2_fc_choices_MC_sess01_10_sel__m_mX_o_m
+ds  13->faces_mpi_en2_fc_choices_MC_sess01_10_sel___a03
+ds  14->faces_mpi_en2_fc_choices_MC_sess01_10_sel__y_fX_y_m_a03
+ds  15->faces_mpi_en2_fc_choices_MC_sess01_10_sel__m_fX_m_m_a03
+ds  16->faces_mpi_en2_fc_choices_MC_sess01_10_sel__o_fX_o_m_a03
+ds  17->faces_mpi_en2_fc_choices_MC_sess01_10_sel__y_fX_m_fX_o_f_a03
+ds  18->faces_mpi_en2_fc_choices_MC_sess01_10_sel__y_fX_m_f_a03
+ds  19->faces_mpi_en2_fc_choices_MC_sess01_10_sel__y_fX_o_f_a03
+ds  20->faces_mpi_en2_fc_choices_MC_sess01_10_sel__m_fX_o_f_a03
+ds  21->faces_mpi_en2_fc_choices_MC_sess01_10_sel__y_mX_m_mX_o_m_a03
+ds  22->faces_mpi_en2_fc_choices_MC_sess01_10_sel__y_mX_m_m_a03
+ds  23->faces_mpi_en2_fc_choices_MC_sess01_10_sel__y_mX_o_m_a03
+ds  24->faces_mpi_en2_fc_choices_MC_sess01_10_sel__m_mX_o_m_a03
+ds  25->faces_mpi_en2_fc_choices_SAW_sess01_10_sel__
+ds  26->faces_mpi_en2_fc_choices_SAW_sess01_10_sel__y_fX_y_m
+ds  27->faces_mpi_en2_fc_choices_SAW_sess01_10_sel__m_fX_m_m
+ds  28->faces_mpi_en2_fc_choices_SAW_sess01_10_sel__o_fX_o_m
+ds  29->faces_mpi_en2_fc_choices_SAW_sess01_10_sel__y_fX_m_fX_o_f
+ds  30->faces_mpi_en2_fc_choices_SAW_sess01_10_sel__y_fX_m_f
+ds  31->faces_mpi_en2_fc_choices_SAW_sess01_10_sel__y_fX_o_f
+ds  32->faces_mpi_en2_fc_choices_SAW_sess01_10_sel__m_fX_o_f
+ds  33->faces_mpi_en2_fc_choices_SAW_sess01_10_sel__y_mX_m_mX_o_m
+ds  34->faces_mpi_en2_fc_choices_SAW_sess01_10_sel__y_mX_m_m
+ds  35->faces_mpi_en2_fc_choices_SAW_sess01_10_sel__y_mX_o_m
+ds  36->faces_mpi_en2_fc_choices_SAW_sess01_10_sel__m_mX_o_m
+ds  37->faces_mpi_en2_fc_choices_SAW_sess01_10_sel___a03
+ds  38->faces_mpi_en2_fc_choices_SAW_sess01_10_sel__y_fX_y_m_a03
+ds  39->faces_mpi_en2_fc_choices_SAW_sess01_10_sel__m_fX_m_m_a03
+ds  40->faces_mpi_en2_fc_choices_SAW_sess01_10_sel__o_fX_o_m_a03
+ds  41->faces_mpi_en2_fc_choices_SAW_sess01_10_sel__y_fX_m_fX_o_f_a03
+ds  42->faces_mpi_en2_fc_choices_SAW_sess01_10_sel__y_fX_m_f_a03
+ds  43->faces_mpi_en2_fc_choices_SAW_sess01_10_sel__y_fX_o_f_a03
+ds  44->faces_mpi_en2_fc_choices_SAW_sess01_10_sel__m_fX_o_f_a03
+ds  45->faces_mpi_en2_fc_choices_SAW_sess01_10_sel__y_mX_m_mX_o_m_a03
+ds  46->faces_mpi_en2_fc_choices_SAW_sess01_10_sel__y_mX_m_m_a03
+ds  47->faces_mpi_en2_fc_choices_SAW_sess01_10_sel__y_mX_o_m_a03
+ds  48->faces_mpi_en2_fc_choices_SAW_sess01_10_sel__m_mX_o_m_a03
+  Columns 1 through 27
+     1     2     3     4     5     6     7     8     9    10    11    12    13    14    15    16    17    18    19    20    21    22    23    24    25    26    27
+  Columns 28 through 48
+    28    29    30    31    32    33    34    35    36    37    38    39    40    41    42    43    44    45    46    47    48
+Enter datasets to use (0 to re-enter a file or end) (range: 0 to 48):
+processed set   1 in table: faces_mpi_en2_fc_choices_MC_sess01_10_sel__ (set   1 in        faces_umi_triplike_db_11Aug23.mat), type su
+processed set   2 in table: faces_mpi_en2_fc_choices_MC_sess01_10_sel__y_fX_y_m (set   2 in        faces_umi_triplike_db_11Aug23.mat), type su
+processed set   3 in table: faces_mpi_en2_fc_choices_MC_sess01_10_sel__m_fX_m_m (set   3 in        faces_umi_triplike_db_11Aug23.mat), type su
+processed set   4 in table: faces_mpi_en2_fc_choices_MC_sess01_10_sel__o_fX_o_m (set   4 in        faces_umi_triplike_db_11Aug23.mat), type su
+processed set   5 in table: faces_mpi_en2_fc_choices_MC_sess01_10_sel__y_fX_m_fX_o_f (set   5 in        faces_umi_triplike_db_11Aug23.mat), type su
+processed set   6 in table: faces_mpi_en2_fc_choices_MC_sess01_10_sel__y_fX_m_f (set   6 in        faces_umi_triplike_db_11Aug23.mat), type su
+processed set   7 in table: faces_mpi_en2_fc_choices_MC_sess01_10_sel__y_fX_o_f (set   7 in        faces_umi_triplike_db_11Aug23.mat), type su
+processed set   8 in table: faces_mpi_en2_fc_choices_MC_sess01_10_sel__m_fX_o_f (set   8 in        faces_umi_triplike_db_11Aug23.mat), type su
+processed set   9 in table: faces_mpi_en2_fc_choices_MC_sess01_10_sel__y_mX_m_mX_o_m (set   9 in        faces_umi_triplike_db_11Aug23.mat), type su
+processed set  10 in table: faces_mpi_en2_fc_choices_MC_sess01_10_sel__y_mX_m_m (set  10 in        faces_umi_triplike_db_11Aug23.mat), type su
+processed set  11 in table: faces_mpi_en2_fc_choices_MC_sess01_10_sel__y_mX_o_m (set  11 in        faces_umi_triplike_db_11Aug23.mat), type su
+processed set  12 in table: faces_mpi_en2_fc_choices_MC_sess01_10_sel__m_mX_o_m (set  12 in        faces_umi_triplike_db_11Aug23.mat), type su
+processed set  13 in table: faces_mpi_en2_fc_choices_MC_sess01_10_sel___a03 (set  13 in        faces_umi_triplike_db_11Aug23.mat), type su
+processed set  14 in table: faces_mpi_en2_fc_choices_MC_sess01_10_sel__y_fX_y_m_a03 (set  14 in        faces_umi_triplike_db_11Aug23.mat), type su
+processed set  15 in table: faces_mpi_en2_fc_choices_MC_sess01_10_sel__m_fX_m_m_a03 (set  15 in        faces_umi_triplike_db_11Aug23.mat), type su
+processed set  16 in table: faces_mpi_en2_fc_choices_MC_sess01_10_sel__o_fX_o_m_a03 (set  16 in        faces_umi_triplike_db_11Aug23.mat), type su
+processed set  17 in table: faces_mpi_en2_fc_choices_MC_sess01_10_sel__y_fX_m_fX_o_f_a03 (set  17 in        faces_umi_triplike_db_11Aug23.mat), type su
+processed set  18 in table: faces_mpi_en2_fc_choices_MC_sess01_10_sel__y_fX_m_f_a03 (set  18 in        faces_umi_triplike_db_11Aug23.mat), type su
+processed set  19 in table: faces_mpi_en2_fc_choices_MC_sess01_10_sel__y_fX_o_f_a03 (set  19 in        faces_umi_triplike_db_11Aug23.mat), type su
+processed set  20 in table: faces_mpi_en2_fc_choices_MC_sess01_10_sel__m_fX_o_f_a03 (set  20 in        faces_umi_triplike_db_11Aug23.mat), type su
+processed set  21 in table: faces_mpi_en2_fc_choices_MC_sess01_10_sel__y_mX_m_mX_o_m_a03 (set  21 in        faces_umi_triplike_db_11Aug23.mat), type su
+processed set  22 in table: faces_mpi_en2_fc_choices_MC_sess01_10_sel__y_mX_m_m_a03 (set  22 in        faces_umi_triplike_db_11Aug23.mat), type su
+processed set  23 in table: faces_mpi_en2_fc_choices_MC_sess01_10_sel__y_mX_o_m_a03 (set  23 in        faces_umi_triplike_db_11Aug23.mat), type su
+processed set  24 in table: faces_mpi_en2_fc_choices_MC_sess01_10_sel__m_mX_o_m_a03 (set  24 in        faces_umi_triplike_db_11Aug23.mat), type su
+processed set  25 in table: faces_mpi_en2_fc_choices_SAW_sess01_10_sel__ (set  25 in        faces_umi_triplike_db_11Aug23.mat), type su
+processed set  26 in table: faces_mpi_en2_fc_choices_SAW_sess01_10_sel__y_fX_y_m (set  26 in        faces_umi_triplike_db_11Aug23.mat), type su
+processed set  27 in table: faces_mpi_en2_fc_choices_SAW_sess01_10_sel__m_fX_m_m (set  27 in        faces_umi_triplike_db_11Aug23.mat), type su
+processed set  28 in table: faces_mpi_en2_fc_choices_SAW_sess01_10_sel__o_fX_o_m (set  28 in        faces_umi_triplike_db_11Aug23.mat), type su
+processed set  29 in table: faces_mpi_en2_fc_choices_SAW_sess01_10_sel__y_fX_m_fX_o_f (set  29 in        faces_umi_triplike_db_11Aug23.mat), type su
+processed set  30 in table: faces_mpi_en2_fc_choices_SAW_sess01_10_sel__y_fX_m_f (set  30 in        faces_umi_triplike_db_11Aug23.mat), type su
+processed set  31 in table: faces_mpi_en2_fc_choices_SAW_sess01_10_sel__y_fX_o_f (set  31 in        faces_umi_triplike_db_11Aug23.mat), type su
+processed set  32 in table: faces_mpi_en2_fc_choices_SAW_sess01_10_sel__m_fX_o_f (set  32 in        faces_umi_triplike_db_11Aug23.mat), type su
+processed set  33 in table: faces_mpi_en2_fc_choices_SAW_sess01_10_sel__y_mX_m_mX_o_m (set  33 in        faces_umi_triplike_db_11Aug23.mat), type su
+processed set  34 in table: faces_mpi_en2_fc_choices_SAW_sess01_10_sel__y_mX_m_m (set  34 in        faces_umi_triplike_db_11Aug23.mat), type su
+processed set  35 in table: faces_mpi_en2_fc_choices_SAW_sess01_10_sel__y_mX_o_m (set  35 in        faces_umi_triplike_db_11Aug23.mat), type su
+processed set  36 in table: faces_mpi_en2_fc_choices_SAW_sess01_10_sel__m_mX_o_m (set  36 in        faces_umi_triplike_db_11Aug23.mat), type su
+processed set  37 in table: faces_mpi_en2_fc_choices_SAW_sess01_10_sel___a03 (set  37 in        faces_umi_triplike_db_11Aug23.mat), type su
+processed set  38 in table: faces_mpi_en2_fc_choices_SAW_sess01_10_sel__y_fX_y_m_a03 (set  38 in        faces_umi_triplike_db_11Aug23.mat), type su
+processed set  39 in table: faces_mpi_en2_fc_choices_SAW_sess01_10_sel__m_fX_m_m_a03 (set  39 in        faces_umi_triplike_db_11Aug23.mat), type su
+processed set  40 in table: faces_mpi_en2_fc_choices_SAW_sess01_10_sel__o_fX_o_m_a03 (set  40 in        faces_umi_triplike_db_11Aug23.mat), type su
+processed set  41 in table: faces_mpi_en2_fc_choices_SAW_sess01_10_sel__y_fX_m_fX_o_f_a03 (set  41 in        faces_umi_triplike_db_11Aug23.mat), type su
+processed set  42 in table: faces_mpi_en2_fc_choices_SAW_sess01_10_sel__y_fX_m_f_a03 (set  42 in        faces_umi_triplike_db_11Aug23.mat), type su
+processed set  43 in table: faces_mpi_en2_fc_choices_SAW_sess01_10_sel__y_fX_o_f_a03 (set  43 in        faces_umi_triplike_db_11Aug23.mat), type su
+processed set  44 in table: faces_mpi_en2_fc_choices_SAW_sess01_10_sel__m_fX_o_f_a03 (set  44 in        faces_umi_triplike_db_11Aug23.mat), type su
+processed set  45 in table: faces_mpi_en2_fc_choices_SAW_sess01_10_sel__y_mX_m_mX_o_m_a03 (set  45 in        faces_umi_triplike_db_11Aug23.mat), type su
+processed set  46 in table: faces_mpi_en2_fc_choices_SAW_sess01_10_sel__y_mX_m_m_a03 (set  46 in        faces_umi_triplike_db_11Aug23.mat), type su
+processed set  47 in table: faces_mpi_en2_fc_choices_SAW_sess01_10_sel__y_mX_o_m_a03 (set  47 in        faces_umi_triplike_db_11Aug23.mat), type su
+processed set  48 in table: faces_mpi_en2_fc_choices_SAW_sess01_10_sel__m_mX_o_m_a03 (set  48 in        faces_umi_triplike_db_11Aug23.mat), type su
+data column headers
+  Columns 1 through 11
+    'frac_keep'    'thr_val'    'ntriads'    'ntrials'    'orig_data'    'flip_all'    'flip_any'    'flip_one'    'orig_data_sd'    'flip_all_sd'    'flip_any_sd'
+  Column 12
+    'flip_one_sd'
+table_like now has 1812 rows and   22 columns
+Enter 1 if done (range: 0 to 1):0
+Enter likelihood analysis file to add to table, e.g., [animals|btc]_[umi_trip|tent]like_db.mat:faces_tentlike_db_11Aug23.mat
+ds   1->faces_mpi_en2_fc_choices_MC_sess01_10_sel__
+ds   2->faces_mpi_en2_fc_choices_MC_sess01_10_sel__y_fX_y_m
+ds   3->faces_mpi_en2_fc_choices_MC_sess01_10_sel__m_fX_m_m
+ds   4->faces_mpi_en2_fc_choices_MC_sess01_10_sel__o_fX_o_m
+ds   5->faces_mpi_en2_fc_choices_MC_sess01_10_sel__y_fX_m_fX_o_f
+ds   6->faces_mpi_en2_fc_choices_MC_sess01_10_sel__y_fX_m_f
+ds   7->faces_mpi_en2_fc_choices_MC_sess01_10_sel__y_fX_o_f
+ds   8->faces_mpi_en2_fc_choices_MC_sess01_10_sel__m_fX_o_f
+ds   9->faces_mpi_en2_fc_choices_MC_sess01_10_sel__y_mX_m_mX_o_m
+ds  10->faces_mpi_en2_fc_choices_MC_sess01_10_sel__y_mX_m_m
+ds  11->faces_mpi_en2_fc_choices_MC_sess01_10_sel__y_mX_o_m
+ds  12->faces_mpi_en2_fc_choices_MC_sess01_10_sel__m_mX_o_m
+ds  13->faces_mpi_en2_fc_choices_MC_sess01_10_sel___a03
+ds  14->faces_mpi_en2_fc_choices_MC_sess01_10_sel__y_fX_y_m_a03
+ds  15->faces_mpi_en2_fc_choices_MC_sess01_10_sel__m_fX_m_m_a03
+ds  16->faces_mpi_en2_fc_choices_MC_sess01_10_sel__o_fX_o_m_a03
+ds  17->faces_mpi_en2_fc_choices_MC_sess01_10_sel__y_fX_m_fX_o_f_a03
+ds  18->faces_mpi_en2_fc_choices_MC_sess01_10_sel__y_fX_m_f_a03
+ds  19->faces_mpi_en2_fc_choices_MC_sess01_10_sel__y_fX_o_f_a03
+ds  20->faces_mpi_en2_fc_choices_MC_sess01_10_sel__m_fX_o_f_a03
+ds  21->faces_mpi_en2_fc_choices_MC_sess01_10_sel__y_mX_m_mX_o_m_a03
+ds  22->faces_mpi_en2_fc_choices_MC_sess01_10_sel__y_mX_m_m_a03
+ds  23->faces_mpi_en2_fc_choices_MC_sess01_10_sel__y_mX_o_m_a03
+ds  24->faces_mpi_en2_fc_choices_MC_sess01_10_sel__m_mX_o_m_a03
+ds  25->faces_mpi_en2_fc_choices_SAW_sess01_10_sel__
+ds  26->faces_mpi_en2_fc_choices_SAW_sess01_10_sel__y_fX_y_m
+ds  27->faces_mpi_en2_fc_choices_SAW_sess01_10_sel__m_fX_m_m
+ds  28->faces_mpi_en2_fc_choices_SAW_sess01_10_sel__o_fX_o_m
+ds  29->faces_mpi_en2_fc_choices_SAW_sess01_10_sel__y_fX_m_fX_o_f
+ds  30->faces_mpi_en2_fc_choices_SAW_sess01_10_sel__y_fX_m_f
+ds  31->faces_mpi_en2_fc_choices_SAW_sess01_10_sel__y_fX_o_f
+ds  32->faces_mpi_en2_fc_choices_SAW_sess01_10_sel__m_fX_o_f
+ds  33->faces_mpi_en2_fc_choices_SAW_sess01_10_sel__y_mX_m_mX_o_m
+ds  34->faces_mpi_en2_fc_choices_SAW_sess01_10_sel__y_mX_m_m
+ds  35->faces_mpi_en2_fc_choices_SAW_sess01_10_sel__y_mX_o_m
+ds  36->faces_mpi_en2_fc_choices_SAW_sess01_10_sel__m_mX_o_m
+ds  37->faces_mpi_en2_fc_choices_SAW_sess01_10_sel___a03
+ds  38->faces_mpi_en2_fc_choices_SAW_sess01_10_sel__y_fX_y_m_a03
+ds  39->faces_mpi_en2_fc_choices_SAW_sess01_10_sel__m_fX_m_m_a03
+ds  40->faces_mpi_en2_fc_choices_SAW_sess01_10_sel__o_fX_o_m_a03
+ds  41->faces_mpi_en2_fc_choices_SAW_sess01_10_sel__y_fX_m_fX_o_f_a03
+ds  42->faces_mpi_en2_fc_choices_SAW_sess01_10_sel__y_fX_m_f_a03
+ds  43->faces_mpi_en2_fc_choices_SAW_sess01_10_sel__y_fX_o_f_a03
+ds  44->faces_mpi_en2_fc_choices_SAW_sess01_10_sel__m_fX_o_f_a03
+ds  45->faces_mpi_en2_fc_choices_SAW_sess01_10_sel__y_mX_m_mX_o_m_a03
+ds  46->faces_mpi_en2_fc_choices_SAW_sess01_10_sel__y_mX_m_m_a03
+ds  47->faces_mpi_en2_fc_choices_SAW_sess01_10_sel__y_mX_o_m_a03
+ds  48->faces_mpi_en2_fc_choices_SAW_sess01_10_sel__m_mX_o_m_a03
+  Columns 1 through 27
+     1     2     3     4     5     6     7     8     9    10    11    12    13    14    15    16    17    18    19    20    21    22    23    24    25    26    27
+  Columns 28 through 48
+    28    29    30    31    32    33    34    35    36    37    38    39    40    41    42    43    44    45    46    47    48
+Enter datasets to use (0 to re-enter a file or end) (range: 0 to 48):
+processed set  49 in table: faces_mpi_en2_fc_choices_MC_sess01_10_sel__ (set   1 in            faces_tentlike_db_11Aug23.mat), type adt
+processed set  50 in table: faces_mpi_en2_fc_choices_MC_sess01_10_sel__y_fX_y_m (set   2 in            faces_tentlike_db_11Aug23.mat), type adt
+processed set  51 in table: faces_mpi_en2_fc_choices_MC_sess01_10_sel__m_fX_m_m (set   3 in            faces_tentlike_db_11Aug23.mat), type adt
+processed set  52 in table: faces_mpi_en2_fc_choices_MC_sess01_10_sel__o_fX_o_m (set   4 in            faces_tentlike_db_11Aug23.mat), type adt
+processed set  53 in table: faces_mpi_en2_fc_choices_MC_sess01_10_sel__y_fX_m_fX_o_f (set   5 in            faces_tentlike_db_11Aug23.mat), type adt
+processed set  54 in table: faces_mpi_en2_fc_choices_MC_sess01_10_sel__y_fX_m_f (set   6 in            faces_tentlike_db_11Aug23.mat), type adt
+processed set  55 in table: faces_mpi_en2_fc_choices_MC_sess01_10_sel__y_fX_o_f (set   7 in            faces_tentlike_db_11Aug23.mat), type adt
+processed set  56 in table: faces_mpi_en2_fc_choices_MC_sess01_10_sel__m_fX_o_f (set   8 in            faces_tentlike_db_11Aug23.mat), type adt
+processed set  57 in table: faces_mpi_en2_fc_choices_MC_sess01_10_sel__y_mX_m_mX_o_m (set   9 in            faces_tentlike_db_11Aug23.mat), type adt
+processed set  58 in table: faces_mpi_en2_fc_choices_MC_sess01_10_sel__y_mX_m_m (set  10 in            faces_tentlike_db_11Aug23.mat), type adt
+processed set  59 in table: faces_mpi_en2_fc_choices_MC_sess01_10_sel__y_mX_o_m (set  11 in            faces_tentlike_db_11Aug23.mat), type adt
+processed set  60 in table: faces_mpi_en2_fc_choices_MC_sess01_10_sel__m_mX_o_m (set  12 in            faces_tentlike_db_11Aug23.mat), type adt
+processed set  61 in table: faces_mpi_en2_fc_choices_MC_sess01_10_sel___a03 (set  13 in            faces_tentlike_db_11Aug23.mat), type adt
+processed set  62 in table: faces_mpi_en2_fc_choices_MC_sess01_10_sel__y_fX_y_m_a03 (set  14 in            faces_tentlike_db_11Aug23.mat), type adt
+processed set  63 in table: faces_mpi_en2_fc_choices_MC_sess01_10_sel__m_fX_m_m_a03 (set  15 in            faces_tentlike_db_11Aug23.mat), type adt
+processed set  64 in table: faces_mpi_en2_fc_choices_MC_sess01_10_sel__o_fX_o_m_a03 (set  16 in            faces_tentlike_db_11Aug23.mat), type adt
+processed set  65 in table: faces_mpi_en2_fc_choices_MC_sess01_10_sel__y_fX_m_fX_o_f_a03 (set  17 in            faces_tentlike_db_11Aug23.mat), type adt
+processed set  66 in table: faces_mpi_en2_fc_choices_MC_sess01_10_sel__y_fX_m_f_a03 (set  18 in            faces_tentlike_db_11Aug23.mat), type adt
+processed set  67 in table: faces_mpi_en2_fc_choices_MC_sess01_10_sel__y_fX_o_f_a03 (set  19 in            faces_tentlike_db_11Aug23.mat), type adt
+processed set  68 in table: faces_mpi_en2_fc_choices_MC_sess01_10_sel__m_fX_o_f_a03 (set  20 in            faces_tentlike_db_11Aug23.mat), type adt
+processed set  69 in table: faces_mpi_en2_fc_choices_MC_sess01_10_sel__y_mX_m_mX_o_m_a03 (set  21 in            faces_tentlike_db_11Aug23.mat), type adt
+processed set  70 in table: faces_mpi_en2_fc_choices_MC_sess01_10_sel__y_mX_m_m_a03 (set  22 in            faces_tentlike_db_11Aug23.mat), type adt
+processed set  71 in table: faces_mpi_en2_fc_choices_MC_sess01_10_sel__y_mX_o_m_a03 (set  23 in            faces_tentlike_db_11Aug23.mat), type adt
+processed set  72 in table: faces_mpi_en2_fc_choices_MC_sess01_10_sel__m_mX_o_m_a03 (set  24 in            faces_tentlike_db_11Aug23.mat), type adt
+processed set  73 in table: faces_mpi_en2_fc_choices_SAW_sess01_10_sel__ (set  25 in            faces_tentlike_db_11Aug23.mat), type adt
+processed set  74 in table: faces_mpi_en2_fc_choices_SAW_sess01_10_sel__y_fX_y_m (set  26 in            faces_tentlike_db_11Aug23.mat), type adt
+processed set  75 in table: faces_mpi_en2_fc_choices_SAW_sess01_10_sel__m_fX_m_m (set  27 in            faces_tentlike_db_11Aug23.mat), type adt
+processed set  76 in table: faces_mpi_en2_fc_choices_SAW_sess01_10_sel__o_fX_o_m (set  28 in            faces_tentlike_db_11Aug23.mat), type adt
+processed set  77 in table: faces_mpi_en2_fc_choices_SAW_sess01_10_sel__y_fX_m_fX_o_f (set  29 in            faces_tentlike_db_11Aug23.mat), type adt
+processed set  78 in table: faces_mpi_en2_fc_choices_SAW_sess01_10_sel__y_fX_m_f (set  30 in            faces_tentlike_db_11Aug23.mat), type adt
+processed set  79 in table: faces_mpi_en2_fc_choices_SAW_sess01_10_sel__y_fX_o_f (set  31 in            faces_tentlike_db_11Aug23.mat), type adt
+processed set  80 in table: faces_mpi_en2_fc_choices_SAW_sess01_10_sel__m_fX_o_f (set  32 in            faces_tentlike_db_11Aug23.mat), type adt
+processed set  81 in table: faces_mpi_en2_fc_choices_SAW_sess01_10_sel__y_mX_m_mX_o_m (set  33 in            faces_tentlike_db_11Aug23.mat), type adt
+processed set  82 in table: faces_mpi_en2_fc_choices_SAW_sess01_10_sel__y_mX_m_m (set  34 in            faces_tentlike_db_11Aug23.mat), type adt
+processed set  83 in table: faces_mpi_en2_fc_choices_SAW_sess01_10_sel__y_mX_o_m (set  35 in            faces_tentlike_db_11Aug23.mat), type adt
+processed set  84 in table: faces_mpi_en2_fc_choices_SAW_sess01_10_sel__m_mX_o_m (set  36 in            faces_tentlike_db_11Aug23.mat), type adt
+processed set  85 in table: faces_mpi_en2_fc_choices_SAW_sess01_10_sel___a03 (set  37 in            faces_tentlike_db_11Aug23.mat), type adt
+processed set  86 in table: faces_mpi_en2_fc_choices_SAW_sess01_10_sel__y_fX_y_m_a03 (set  38 in            faces_tentlike_db_11Aug23.mat), type adt
+processed set  87 in table: faces_mpi_en2_fc_choices_SAW_sess01_10_sel__m_fX_m_m_a03 (set  39 in            faces_tentlike_db_11Aug23.mat), type adt
+processed set  88 in table: faces_mpi_en2_fc_choices_SAW_sess01_10_sel__o_fX_o_m_a03 (set  40 in            faces_tentlike_db_11Aug23.mat), type adt
+processed set  89 in table: faces_mpi_en2_fc_choices_SAW_sess01_10_sel__y_fX_m_fX_o_f_a03 (set  41 in            faces_tentlike_db_11Aug23.mat), type adt
+processed set  90 in table: faces_mpi_en2_fc_choices_SAW_sess01_10_sel__y_fX_m_f_a03 (set  42 in            faces_tentlike_db_11Aug23.mat), type adt
+processed set  91 in table: faces_mpi_en2_fc_choices_SAW_sess01_10_sel__y_fX_o_f_a03 (set  43 in            faces_tentlike_db_11Aug23.mat), type adt
+processed set  92 in table: faces_mpi_en2_fc_choices_SAW_sess01_10_sel__m_fX_o_f_a03 (set  44 in            faces_tentlike_db_11Aug23.mat), type adt
+processed set  93 in table: faces_mpi_en2_fc_choices_SAW_sess01_10_sel__y_mX_m_mX_o_m_a03 (set  45 in            faces_tentlike_db_11Aug23.mat), type adt
+processed set  94 in table: faces_mpi_en2_fc_choices_SAW_sess01_10_sel__y_mX_m_m_a03 (set  46 in            faces_tentlike_db_11Aug23.mat), type adt
+processed set  95 in table: faces_mpi_en2_fc_choices_SAW_sess01_10_sel__y_mX_o_m_a03 (set  47 in            faces_tentlike_db_11Aug23.mat), type adt
+processed set  96 in table: faces_mpi_en2_fc_choices_SAW_sess01_10_sel__m_mX_o_m_a03 (set  48 in            faces_tentlike_db_11Aug23.mat), type adt
+data column headers
+  Columns 1 through 11
+    'frac_keep'    'thr_val'    'ntriads'    'ntrials'    'orig_data'    'flip_all'    'flip_any'    'flip_one'    'orig_data_sd'    'flip_all_sd'    'flip_any_sd'
+  Column 12
+    'flip_one_sd'
+table_like now has 3356 rows and   22 columns
+Enter 1 if done (range: 0 to 1):1
+remember to save table_like, e.g., in psg_like_maketable_*.mat
+save psg_like_maketable_faces_11Aug23.mat table_like
+table_like(1:10,:)
+ans =
+  10×22 <a href="matlab:helpPopup table" style="font-weight:bold">table</a>
+    <strong>paradigm_type</strong>     <strong>paradigm_name</strong>      <strong>subj_id</strong>    <strong>llr_type</strong>    <strong>ipchoice</strong>    <strong>thr_type</strong>       <strong>a</strong>       <strong>h</strong>     <strong>ah_llr</strong>     <strong>apriori_llr</strong>    <strong>frac_keep</strong>    <strong>thr_val</strong>    <strong>ntriads</strong>    <strong>ntrials</strong>     <strong>orig_data</strong>      <strong>flip_all</strong>      <strong>flip_any</strong>     <strong>flip_one</strong>      <strong>orig_data_sd</strong>    <strong>flip_all_sd</strong>    <strong>flip_any_sd</strong>    <strong>flip_one_sd</strong>
+    <strong>_____________</strong>    <strong>________________</strong>    <strong>_______</strong>    <strong>________</strong>    <strong>________</strong>    <strong>________</strong>    <strong>_______</strong>    <strong>_</strong>    <strong>________</strong>    <strong>___________</strong>    <strong>_________</strong>    <strong>_______</strong>    <strong>_______</strong>    <strong>_______</strong>    <strong>___________</strong>    <strong>___________</strong>    <strong>________</strong>    <strong>___________</strong>    <strong>____________</strong>    <strong>___________</strong>    <strong>___________</strong>    <strong>___________</strong>
+      {'faces'}      {'mpi_en2_fc-_'}    {'MC'}        1           1           1        0.19022    0    -0.41006     -0.28768             1        0        2024       28000       -0.033327      -0.033327    -0.67571      -0.021855     6.1423e-05     2.1948e-18      0.027601      6.1423e-05 
+      {'faces'}      {'mpi_en2_fc-_'}    {'MC'}        1           1           1        0.19022    0    -0.41006     -0.28768           0.5        4         760       12373        -0.02344       -0.02344    -0.77044      -0.015183     0.00013506     4.1691e-18      0.052765      0.00013506 
+      {'faces'}      {'mpi_en2_fc-_'}    {'MC'}        1           1           1        0.19022    0    -0.41006     -0.28768          0.25        5         267        4840       -0.021566      -0.021566    -0.81972      -0.014366     0.00047533     4.7197e-18      0.096107      0.00047533 
+      {'faces'}      {'mpi_en2_fc-_'}    {'MC'}        1           1           1        0.19022    0    -0.41006     -0.28768         0.125        6          56        1134       -0.040562      -0.040562    -0.88106     -0.0077822      0.0046254     1.8637e-17       0.22859       0.0046254 
+      {'faces'}      {'mpi_en2_fc-_'}    {'MC'}        1           1           1        0.19022    0    -0.41006     -0.28768        0.0625        6          56        1134       -0.040562      -0.040562    -0.88106     -0.0077822      0.0046254     1.8637e-17       0.22859       0.0046254 
+      {'faces'}      {'mpi_en2_fc-_'}    {'MC'}        1           1           1        0.19022    0    -0.41006     -0.28768       0.03125        6          56        1134       -0.040562      -0.040562    -0.88106     -0.0077822      0.0046254     1.8637e-17       0.22859       0.0046254 
+      {'faces'}      {'mpi_en2_fc-_'}    {'MC'}        1           1           1        0.19022    0    -0.41006     -0.28768      0.015625        7           7         158     -0.00042806    -0.00042806     -1.0913    -0.00042806     3.9082e-05     1.5876e-17       0.77245      3.9082e-05 
+      {'faces'}      {'mpi_en2_fc-_'}    {'MC'}        1           1           2        0.19022    0    -0.41006     -0.28768             1        0        2024       28000       -0.033327      -0.033327    -0.67571      -0.021855     6.1423e-05     2.1948e-18      0.027601      6.1423e-05 
+      {'faces'}      {'mpi_en2_fc-_'}    {'MC'}        1           1           2        0.19022    0    -0.41006     -0.28768           0.5        7         773       12570       -0.030339      -0.030339    -0.71677      -0.016984     0.00016703     3.9127e-18      0.047957      0.00016703 
+      {'faces'}      {'mpi_en2_fc-_'}    {'MC'}        1           1           2        0.19022    0    -0.41006     -0.28768          0.25        8         339        5835        -0.02822       -0.02822    -0.71947      -0.017095     0.00037457     6.1962e-18      0.073304      0.00037457 
+diary off
